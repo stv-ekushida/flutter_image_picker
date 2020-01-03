@@ -9,7 +9,7 @@ dependencies:
   image_picker: ^0.6.2+3
 ```
 
-## iOS
+## iOSの場合
 
 ios/Runnter/Info.plist
 ```
