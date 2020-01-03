@@ -25,6 +25,7 @@ ios/Runnter/Info.plist
 
 ```
 import 'package:image_picker/image_picker.dart';
+import 'dart:io';
 
 File image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
