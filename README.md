@@ -2,9 +2,16 @@
 
 Image Picker
 
+## ライブラリ
+
+```
+dependencies:
+  image_picker: ^0.6.2+3
+```
+
 ## iOS
 
-info.plist
+ios/Runnter/Info.plist
 ```
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>写真へアクセスするために利用します。</string>
