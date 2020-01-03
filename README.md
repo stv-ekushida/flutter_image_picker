@@ -2,15 +2,32 @@
 
 Image Picker
 
-## Getting Started
+## iOS
 
-This project is a starting point for a Flutter application.
+info.plist
+```
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>写真へアクセスするために利用します。</string>
+	<key>NSCameraUsageDescription</key>
+	<string>写真を撮影するために利用します。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>音声を録音するために利用します。</string>
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Flutter 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+import 'package:image_picker/image_picker.dart';
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+File image = await ImagePicker.pickImage(source: ImageSource.gallery);
+
+```
+
+### カメラとギャラリー
+
+```
+enum ImageSource {
+  camera,
+  gallery,
+}
+```
